@@ -1,0 +1,74 @@
+body {
+	font: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.6) ;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+	background: linear-gradient(to right,#D16BA5, #86A8E7, #5FFBF1); 
+}
+ 
+input[type="color"] {
+	border-color: black;
+	width: 6em;
+	height: 3em;
+}
+
+input[type="color"]:active {
+    transform: translateY(3px);
+    /* transform: scale(1.5); */
+}
+
+.name{
+    border-right: transparent;
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 50px;
+    color: rgba(0,0,0,.9);
+}
+  
+.name{
+    animation: animated-text 1.8s steps(40) ,animated-cursor 600ms steps(40) infinite;
+}
+    
+@keyframes animated-text{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes animated-cursor{
+    from{border-right-color: transparent;}
+    to{border-right-color: transparent;}
+}
+
+h1 {
+    font: 600 3.5em 'Source Code Pro', monospace; ;
+    color: rgba(0,0,0,.3);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h3{
+	font: 900 1em 'Source Code Pro', monospace; ;
+    color: rgba(0,0,0,0.9);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.fourth{
+    text-transform: none;
+    font-size: 1em;
+}
+
+.zero{
+    font-size:1.6em;
+    letter-spacing: 0.4em;
+    text-decoration: underline;
+}
